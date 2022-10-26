@@ -1,0 +1,313 @@
+:root{
+    --pricolor:rgb(48, 17, 3);
+    --seccolor:rgba(252, 226, 172, 1);
+    --bordercolor: rgba(252, 226, 172, 0.4);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--pricolor);
+    color: var(--seccolor);
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--seccolor);
+    border-radius: 30px;
+}
+/* Start Header */
+/* Start navbar */
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+nav .fa-bars{
+    font-size: 35px;
+    color: var(--seccolor);
+}
+.headerTexts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--seccolor);
+}
+.headerTexts span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.title{
+    cursor: default;
+}
+.title::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+.btns{
+    color: var(--seccolor);
+    background: transparent;
+    border: 2px solid var(--bordercolor);
+    overflow: hidden;
+    position: relative;
+}
+.btns::after{
+    content: '';
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(transparent,var(--bordercolor),transparent);
+
+    position: absolute;
+    left: -90%;
+    top: 0;
+
+    transform: rotate(35deg);
+    
+    transition: all 0.4s;
+}
+.btns:hover.btns::after{
+    left: 100%;
+}
+.btns:hover{
+    color: var(--seccolor);
+    border: 2px solid var(--bordercolor);
+}
+.navbarLists{
+    background-color: var(--seccolor);
+    margin: 15px 0;
+}
+.nav-item{
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+    transition: all 0.3s;
+}
+.nav-item .nav-link{
+    color: #000;
+    font-weight: 700;
+
+    transition: all 0.3s;
+}
+.nav-item:hover{
+    background: var(--pricolor);
+}
+.nav-item .nav-link:hover{
+    color: var(--seccolor);
+}
+/* End navbar */
+
+/* Start banner */
+
+.myslider{
+    display: none;
+    animation-name: myani-fade;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+.images{
+    width: 100%;
+    vertical-align: middle;
+}
+.slideshow-containers{
+    position: relative;
+    margin: auto;
+}
+.next, .prev{
+    text-decoration: none;
+    width: auto;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+
+    transition: all 0.6s ease;
+
+    cursor: pointer;
+    user-select: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next:hover, .prev:hover{
+    color: #fff;
+}
+
+@keyframes myani-fade {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* End Banner */
+.regMini p{
+    font-size: 20px;
+    color: var(--seccolor);
+}
+.regMini input,.regMini select{
+    color: #fff;
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--seccolor);
+}
+.regMini input:focus,.regMini select:focus{
+    color: #fff;
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--seccolor);
+}
+.regMini select option{
+    background: var(--pricolor);
+    color: #fff;
+}
+/* End Header */
+
+/* Start About */
+.about{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.abouttexts{
+    color: var(--seccolor);
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: default;
+}
+.abouttexts p{
+    line-height: 2;
+}
+.aboutbtns{
+    background: transparent;
+    color: var(--seccolor);
+    padding: 8px 15px;
+    border: 2px solid var(--bordercolor);
+    border-radius: 3px;
+
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.aboutbtns:hover{
+    background: var(--seccolor);
+    color: var(--pricolor);
+    border-radius: 30px;
+}
+.iconText{
+    margin-bottom: 20px;
+    cursor: default;
+}
+.iconText img{
+    user-select: none;
+}
+.iconText p{
+    line-height: 2;
+}
+.iconText h3::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+.iconText p::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+
+/* End About */
+
+/* Start Reservation */
+.form{
+    border: 1px solid var(--bordercolor);
+    padding: 20px 40px;
+}
+.form h1{
+    background: var(--seccolor);
+    color: var(--pricolor);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin: 25px 0;
+}
+
+/* End Reservation */
+
+/* Start Contact */
+
+.contactform{
+    border: 1px solid var(--bordercolor);
+    padding: 20px;
+}
+ h4{
+    color: var(--pricolor);
+    background-color: var(--seccolor);
+    padding: 7px 0;
+    border-radius: 7px;
+}
+.contactform .form-group input,.contactform .form-group textarea{
+    background: var(--pricolor);
+    color: var(--seccolor);
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--bordercolor);
+    margin-bottom: 25px;
+}
+.contactform .form-group input::placeholder,.contactform .form-group textarea::placeholder{
+    color: var(--bordercolor);
+}
+.contactform .form-group input:focus,.contactform .form-group textarea:focus{
+    box-shadow: none;
+}
+.contactque{
+    border: 1px solid var(--bordercolor);
+    border-radius: 7px;
+    margin-bottom: 19px;
+}
+.contactque .quetitle{
+    background-color: var(--seccolor);
+    color: var(--pricolor);
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.contactque .queans{
+    padding: 18px;
+    line-height: 2;
+    text-align: center;
+    cursor: default;
+    
+    transition: all 0.5s;
+}
+.form-control::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+.queans p::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+.active{
+    display: none;
+}
+
+
+/* End Contact */
