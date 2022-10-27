@@ -48,3 +48,66 @@ for(let x = 0; x < gettitle.length; x++){
 
 
 // End Contact
+
+// Start Gallery
+
+// var swiper = new Swiper(".swiper-container", {
+//     slidesPerView: 3,
+//     loop: true,
+//     effect: 'coverflow',
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: 'auto',
+//     coverflowEffect: {
+//         rotate: 20,
+//         stretch: 0,
+//         depth: 200,
+//         modifier: 1,
+//         slideShadows: true,
+//     },
+//     // autoplay: {
+//     //     delay: 2500,
+//     //     disableOnInteraction: false,
+//     // }
+// });
+
+var swiper = new Swiper(".galleryswiper", {
+    loop:true,
+    effect: "coverflow",
+    slidesPerView: "auto",
+    centeredSlides: true,
+    grabCursor: true,
+    coverflowEffect: {
+       rotate: 0,
+       stretch: 0,
+       depth: 100,
+       modifier: 2,
+       slideShadows: true,
+    },
+    pagination: {
+       el: ".swiper-pagination",
+     },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    }
+ });
+
+// End Gallery
+
+// Start Contact
+
+var swiper = new Swiper('.reviewsswiper', {
+    slidesPerView: 2,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    }
+    });
+
+// End Contact

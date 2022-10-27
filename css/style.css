@@ -309,5 +309,91 @@ nav .fa-bars{
     display: none;
 }
 
-
 /* End Contact */
+
+/* Start Gallery */
+#gallery .container{
+    overflow: hidden;
+}
+.gallery img{
+    width: 50rem;
+    height: 30rem;
+    border-radius: .5rem;
+    object-fit: cover;
+    margin-bottom: 4rem;
+    user-select: none;
+ }
+ @media (max-width:450px){
+    .gallery img{
+        width: 310px;
+        height: 170px;
+    }
+ 
+}
+.galleryswiper .swiper-pagination span{
+    background-color: var(--seccolor);
+}
+/* End Gallery */
+
+/* Start Review */
+.reviewsswiper{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    position: relative;
+}
+.review-text{
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.review-text img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.revtext{
+    width: 80%;
+    margin: auto;
+}
+.reviewsswiper .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
+.reviewsswiper .swiper-pagination span{
+    background-color: var(--seccolor);
+}
+/* End Review */
+
+/* Footer Start */
+.footer_text a::selection,.footer_text i::selection{
+    background: var(--seccolor);
+    color: var(--pricolor);
+}
+.footer_text p{
+    cursor: pointer;
+}
+.footer_text p a{
+    text-decoration: none;
+    color: var(--seccolor);
+}
+.footer_text a:hover{
+    color: #fff;
+}
+.footer_text ul li{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 8px;
+}
+.copyrights{
+    padding: 10px 0;
+    background: var(--seccolor);
+    color: var(--pricolor);
+    border-radius: 7px;
+}
+.copyrights span{
+    font-size: 20px;
+}
+/* Footer End */

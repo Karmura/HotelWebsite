@@ -6,10 +6,13 @@
         <!-- <link href="./assets/img/fav/favicon3.png" rel="icon" type="image/" sizes="16x16" /> -->
         <!-- bootstrap css1 js1  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Swiper css1 js1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <!-- fontawesome css1  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- custom css -->
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     
@@ -323,12 +326,21 @@
 
         <!-- Start Gallery -->
 
-        <section id="gallery" class="mt-5">
+        <section id="gallery" class="mt-5 gallery">
+
             <div class="container">
-                <div class="row">
-                    
+                <div class="swiper galleryswiper">
+                    <div class="swiper-wrapper">
+                        <img src="./assets/img/gallery-img-1.jpg" class="swiper-slide" alt="gallery-img-1"/>
+                        <img src="./assets/img/gallery-img-2.jpg" class="swiper-slide" alt="gallery-img-2"/>
+                        <img src="./assets/img/gallery-img-3.jpg" class="swiper-slide" alt="gallery-img-3"/>
+                        <img src="./assets/img/gallery-img-4.jpg" class="swiper-slide" alt="gallery-img-4"/>
+                        <img src="./assets/img/gallery-img-5.jpg" class="swiper-slide" alt="gallery-img-5"/>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-            </div>   
+            </div>
+
         </section>
 
         <!-- End Gallery -->
@@ -426,10 +438,51 @@
 
         <!-- Start Reviews -->
 
-        <section id="reviews" class="mt-5">
+        <section id="reviews" class="my-5">
             <div class="container">
-                <div class="row">
-                    
+                <div class="swiper reviewsswiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-1.png" alt="pic-1" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-2.png" alt="pic-2" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-3.png" alt="pic-3" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-4.png" alt="pic-4" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-5.png" alt="pic-5" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="swiper-slide review-text">
+                            <img src="./assets/img/pic-6.png" alt="pic-6" class="mb-2" />
+                            <p>Jhon Deo</p>
+                            <p class="revtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>   
         </section>
@@ -437,8 +490,56 @@
         <!-- End Reviews -->
 
         <!-- Start Footer -->
-        <footer>
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="footer_text d-flex col-md-12">
 
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <p><i class="fas fa-phone-alt me-2"></i><a href=""> 099 654 183 69</a></p>
+                            <p><i class="fas fa-phone-alt me-2"></i><a href=""> +111-222-3333</a></p>
+                            <p><i class="fas fa-envelope me-2"></i><a href=""> kaungkhantkyaw408@gmail.com</a></p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i><a href=""> Yangon, Myanmar - 11031</a></p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <ul class="text-center">
+                                <li>
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="nav-link">About</a>
+                                </li>
+                                <li>
+                                    <a href="#reservation" class="nav-link">Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery" class="nav-link">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="nav-link">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#reviews" class="nav-link">Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-end">
+                            <p><a href="">facebook </a><i class="fab fa-facebook-f ms-2"></i></p>
+                            <p><a href="">twitter </a><i class="fab fa-twitter ms-2"></i></p>
+                            <p><a href="">instagram </a><i class="fab fa-instagram ms-2"></i></p>
+                            <p><a href="">linkedin </a><i class="fab fa-linkedin-in ms-2"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12 col-md-12 text-center copyrights">
+                        <span>© copyright @ 2022 by mr. web designer | all rights reseved!</span>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- End Footer -->
 
@@ -450,7 +551,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- jquery js1  -->
     <script src="./assets/libs/jquery-3.6.1/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <!-- Swiper css1 js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js  -->
     <script src="./js/app.js" type="text/javascript"></script>
+
 </body>
 </html>
